@@ -1,0 +1,8 @@
+tasks:
+  - init: |
+      docker-compose up --build
+    command: |
+      docker-compose up
+ports:
+  - port: 8080
+    onOpen: open-browser
